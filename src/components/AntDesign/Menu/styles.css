@@ -1,0 +1,16 @@
+.menu {
+  text-align: start;
+}
+
+.ant-menu {
+  background-color: transparent;
+  border-color: #606060;
+  color: lightgrey;
+  margin-bottom: 15px;
+}
+
+.ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+  color: lightgrey;
+}
+
+/*# sourceMappingURL=styles.css.map */

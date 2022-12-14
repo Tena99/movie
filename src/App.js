@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link, Outlet } from "react-router-dom";
+
+import Navigation from "./components/Navigation";
+
+import Header from "./components/shared/Header";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className={"container"}>
+        <Header />
+        <h1>Welcome to Movie App!</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Movies - scary, funny, dramatic, romantic - make us experience a whole
+          range of emotions. A lot of movies - a lot of experiences!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navigation></Navigation>
+        <Outlet />
+      </div>
     </div>
   );
 }
