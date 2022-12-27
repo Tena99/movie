@@ -1,0 +1,43 @@
+.ant-input {
+  color: lightgrey;
+
+  &::placeholder {
+    color: lightgrey;
+  }
+}
+
+.anticon-search,
+.ant-input-search-button:not(.ant-btn-primary) {
+  color: lightgrey;
+}
+
+.search_form_item {
+  display: flex;
+}
+
+.search {
+  margin-right: 5px;
+}
+
+.search_btn {
+  border: 1px solid lightgrey;
+
+  &:hover {
+    border-color: #4096ff;
+
+    svg {
+      color: #4096ff;
+      transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+
+.form_errors {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  color: #9b9b9b;
+  background: rgb(0, 0, 0, 0.3);
+  margin-top: 5px;
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import { Avatar, Badge, Space } from "antd";
+import { Badge, Space } from "antd";
 
 import "./styles.css";
 
 const Tag = ({ count }) => (
-  <Space className={"tag"} size="middle" color={"blue"}>
+  <Space className={"tag"} size="middle">
     <Badge className={"tag"} count={count}></Badge>
   </Space>
 );

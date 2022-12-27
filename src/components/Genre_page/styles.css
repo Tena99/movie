@@ -1,0 +1,14 @@
+.genre_title {
+  color: lightgrey;
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 32px 0;
+}
+
+.card_container {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

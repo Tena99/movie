@@ -1,0 +1,75 @@
+.ant-layout-sider,
+.ant-layout-sider-dark {
+  margin-right: 20px;
+  background: transparent !important;
+}
+
+.movie_container {
+  .movie_poster {
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .movie_description {
+    .movie_description_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        padding: 5px;
+        margin: 0;
+        font-size: 28px;
+        width: fit-content;
+        color: lightgrey;
+      }
+
+      span {
+        padding: 10px;
+        color: lightgrey;
+
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .movie_description_tagline {
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 5px;
+
+      li {
+        line-height: 32px;
+        font-size: 16px;
+        width: fit-content;
+        color: lightgrey;
+
+        span {
+          &:first-of-type {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .movie_description_overview {
+      line-height: 26px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .movie_trailer {
+    width: 100%;
+    background: #151a20;
+    height: 100%;
+  }
+}

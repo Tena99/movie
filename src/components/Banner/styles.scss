@@ -1,0 +1,60 @@
+.main_banner {
+  color: lightgrey;
+  height: 445px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+
+  .banner_img {
+    img {
+      height: 300px;
+      border-radius: 5px;
+    }
+  }
+
+  .banner_info {
+    min-width: 300px;
+
+    .banner_info_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3,
+      p {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      h3 {
+        margin-right: 20px;
+      }
+
+      p {
+        color: #f0c129;
+
+        svg {
+          color: #f0c129;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.banner_info_description {
+  max-width: 425px;
+  line-height: 28px;
+}
+
+.banner_info_genres,
+.banner_info_description {
+  font-size: 16px;
+}
+
+.banner_info_genres {
+  margin-bottom: 15px;
+  padding: 0;
+}

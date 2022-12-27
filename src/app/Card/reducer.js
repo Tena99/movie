@@ -1,16 +1,37 @@
-import {Popular, NowWatching, Upcoming, TopRated, Genres} from "./types";
-import {genres} from "./actions";
+import {
+  Trending,
+  Popular,
+  NowWatching,
+  Upcoming,
+  TopRated,
+  Genres,
+} from "./types";
 
 const initialState = {
-  popular_movies: {},
-  now_watching: {},
-  upcoming: {},
-  top_rated: {},
+  trending: {},
+  popular_movies: [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  ],
+  now_watching: [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  ],
+  upcoming: [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  ],
+  top_rated: [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  ],
   genres: [],
 };
 
 const getMovie = (state = initialState, action) => {
   switch (action.type) {
+    case Trending:
+      return {
+        ...state,
+        trending: action.payload,
+      };
+
     case Popular:
       return {
         ...state,

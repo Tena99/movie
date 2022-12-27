@@ -1,21 +1,26 @@
-import Search_field from "../../AntDesign/Search";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import Dropdown_menu from "../../AntDesign/Dropdown";
 import logo from "../../../assets/images/logo.svg";
+import Formik_Search from "../../Formik_Search";
 
 import "./styles.css";
-import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header>
-      <div className={"container"}>
+    <>
+      <div className={"dropdown"}>
+        <Dropdown_menu />
+
         <div className={"logo"}>
           <Link to={"/"}>
             <img src={logo} alt={"logo"} />
           </Link>
         </div>
-        <Search_field />
       </div>
-    </header>
+      <Formik_Search />
+    </>
   );
 }
 

@@ -1,3 +1,4 @@
+export const Trending = "TRENDING";
 export const Popular = "POPULAR";
 export const NowWatching = "NOW_WATCHING";
 export const Upcoming = "UPCOMING";

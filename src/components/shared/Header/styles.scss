@@ -1,12 +1,18 @@
 header {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+  display: flex;
+  justify-content: space-between;
 
-    .logo {
-      width: 175px;
-    }
+  .logo {
+    width: 175px;
+    z-index: 9999;
   }
+}
+
+.ant-layout .ant-layout-header {
+  line-height: initial;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
 }

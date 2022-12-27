@@ -1,7 +1,20 @@
-import { Popular, NowWatching, Upcoming, TopRated, Genres } from "./types";
+import {
+  Trending,
+  Popular,
+  NowWatching,
+  Upcoming,
+  TopRated,
+  Genres,
+} from "./types";
+
+export const trending = (payload) => {
+  return {
+    type: Trending,
+    payload,
+  };
+};
 
 export const popular = (payload) => {
-  console.log("action");
   return {
     type: Popular,
     payload,

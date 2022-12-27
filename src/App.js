@@ -1,25 +1,33 @@
-import { Link, Outlet } from "react-router-dom";
+import React from "react";
 
-import Navigation from "./components/Navigation";
+import Header_Component from "./components/shared/Header";
+import Footer_Component from "./components/shared/Footer";
 
-import Header from "./components/shared/Header";
+import { Layout } from "antd";
 
 import "./App.css";
+import { Outlet } from "react-router-dom";
+import { SkeletonTheme } from "react-loading-skeleton";
+
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <div className={"container"}>
-        <Header />
-        <h1>Welcome to Movie App!</h1>
-        <p>
-          Movies - scary, funny, dramatic, romantic - make us experience a whole
-          range of emotions. A lot of movies - a lot of experiences!
-        </p>
-        <Navigation></Navigation>
-        <Outlet />
-      </div>
-    </div>
+    <SkeletonTheme baseColor="#949191" highlightColor="#444">
+      <Layout>
+        <div className={"container"}>
+          <Header>
+            <Header_Component />
+          </Header>
+          <Content>
+            <Outlet />
+          </Content>
+          <Footer>
+            <Footer_Component />
+          </Footer>
+        </div>
+      </Layout>
+    </SkeletonTheme>
   );
 }
 

@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #606060;
+  
+  .logo {
+    width: 175px;
+    z-index: 9999;
+  }
+}
+
+.ant-layout .ant-layout-header {
+  line-height: initial;
+}
