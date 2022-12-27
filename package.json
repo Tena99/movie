@@ -1,8 +1,8 @@
 {
   "name": "movie_app_react",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://Tena99.github.io/movie",
+  "private": false,
+  "homepage": "https://tena99.github.io/movie/",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@reduxjs/toolkit": "^1.9.1",
